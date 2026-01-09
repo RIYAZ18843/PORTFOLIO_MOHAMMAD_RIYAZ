@@ -64,7 +64,8 @@ const Hero = () => {
                                     "MERN Full Stack Developer",
                                     "React.js Developer",
                                     "Node.js Developer",
-                                    "WordPress Expert"
+                                    "WordPress Expert",
+                                    "Freelancer"
                                 ],
                                 autoStart: true,
                                 loop: true,

@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${spaceGrotesk.variable} ${orbitron.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${orbitron.variable} antialiased overflow-x-hidden w-full`}
       >
         {children}
       </body>

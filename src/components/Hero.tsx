@@ -115,9 +115,9 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.9, x: 50 }}
                     animate={{ opacity: 1, scale: 1, x: 0 }}
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative hidden lg:block"
+                    className="relative block mt-16 lg:mt-0"
                 >
-                    <div className="relative aspect-[4/5] rounded-[5rem] overflow-hidden glass-panel group shadow-2xl">
+                    <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-[3rem] md:rounded-[5rem] overflow-hidden glass-panel group shadow-2xl">
                         {/* Real Profile Image Integration */}
                         <div className="absolute inset-0 w-full h-full scale-110 group-hover:scale-100 transition-transform duration-[2s]">
                             <Image
@@ -130,10 +130,10 @@ const Hero = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
                         </div>
 
-                        <div className="absolute inset-x-0 bottom-0 p-12 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+                        <div className="absolute inset-x-0 bottom-0 p-8 md:p-12 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
                             <div className="w-12 h-1 bg-primary mb-6 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-700" />
-                            <p className="font-orbitron font-black text-3xl mb-2 text-white italic">MOHAMMAD RIYAZ</p>
-                            <p className="text-white/40 text-xs uppercase tracking-[0.3em] font-bold">Hyderabad • Full Stack • CMS</p>
+                            <p className="font-orbitron font-black text-2xl md:text-3xl mb-2 text-white italic">MOHAMMAD RIYAZ</p>
+                            <p className="text-white/40 text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold">Hyderabad • Full Stack • CMS</p>
                             <div className="mt-8 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity delay-300">
                                 <div className="w-2 h-2 rounded-full bg-primary" />
                                 <div className="w-2 h-2 rounded-full bg-white/20" />
@@ -149,9 +149,9 @@ const Hero = () => {
                     <motion.div
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                        className="absolute -top-8 -right-8 glass-panel p-6 rounded-3xl z-20"
+                        className="absolute -top-4 -right-4 md:-top-8 md:-right-8 glass-panel p-4 md:p-6 rounded-2xl md:rounded-3xl z-20"
                     >
-                        <p className="text-xs font-black text-primary leading-tight">TOP RATED<br />DEVELOPER</p>
+                        <p className="text-[10px] md:text-xs font-black text-primary leading-tight">TOP RATED<br />DEVELOPER</p>
                     </motion.div>
                 </motion.div>
             </div>

@@ -19,8 +19,14 @@
     @apply border-white/5;
   }
 
+  html,
   body {
-    @apply bg-background text-white selection:bg-primary/30 antialiased overflow-x-hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-white selection:bg-primary/30 antialiased;
     font-feature-settings: "ss01", "ss02", "cv01";
   }
 

@@ -48,9 +48,9 @@ const Hero = () => {
                         Available for New Projects
                     </motion.div>
 
-                    <h1 className="text-4xl sm:text-5xl md:text-[5.5rem] font-black font-orbitron leading-[1.1] md:leading-[0.9] tracking-tighter mb-8 md:mb-12 uppercase italic relative break-words">
+                    <h1 className="text-[clamp(2.5rem,10vw,5.5rem)] font-black font-orbitron leading-[1.1] md:leading-[0.9] tracking-tighter mb-8 md:mb-12 uppercase italic relative break-words w-full">
                         I AM <br />
-                        <span className="text-gradient relative inline-block mt-2">
+                        <span className="text-gradient relative inline-block mt-2 max-w-full">
                             MOHAMMAD <br className="md:hidden" /> RIYAZ
                             <ArrowDownRight className="absolute -right-4 top-0 w-8 h-8 md:w-12 md:h-12 text-white/10 hidden md:block" />
                         </span>

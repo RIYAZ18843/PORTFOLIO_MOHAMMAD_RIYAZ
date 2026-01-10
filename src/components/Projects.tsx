@@ -101,7 +101,7 @@ const Projects = () => {
                                         {project.tech.map((tech, tIndex) => (
                                             <span
                                                 key={tIndex}
-                                                className="text-[9px] font-orbitron px-2 py-1 rounded bg-white/5 border border-white/10 text-primary hover:bg-primary/10 transition-colors"
+                                                className="text-[9px] font-orbitron px-2 py-1 rounded bg-white/5 border border-white/10 text-primary hover:bg-primary/10 transition-colors whitespace-nowrap"
                                             >
                                                 {tech}
                                             </span>

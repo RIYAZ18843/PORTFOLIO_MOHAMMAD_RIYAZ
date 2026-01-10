@@ -14,7 +14,6 @@ import {
     SiMysql,
     SiGit,
     SiJavascript,
-    SiJavascript,
     SiHtml5,
     SiFramer
 } from "react-icons/si";

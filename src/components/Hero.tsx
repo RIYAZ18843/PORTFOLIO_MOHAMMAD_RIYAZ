@@ -48,16 +48,16 @@ const Hero = () => {
                         Available for New Projects
                     </motion.div>
 
-                    <h1 className="text-5xl md:text-[5.5rem] font-black font-orbitron leading-[0.9] tracking-tighter mb-12 uppercase italic relative">
+                    <h1 className="text-4xl sm:text-5xl md:text-[5.5rem] font-black font-orbitron leading-[1.1] md:leading-[0.9] tracking-tighter mb-8 md:mb-12 uppercase italic relative break-words">
                         I AM <br />
-                        <span className="text-gradient relative block mt-2">
-                            MOHAMMAD <br /> RIYAZ
-                            <ArrowDownRight className="absolute -right-4 top-0 w-12 h-12 text-white/10 hidden md:block" />
+                        <span className="text-gradient relative inline-block mt-2">
+                            MOHAMMAD <br className="md:hidden" /> RIYAZ
+                            <ArrowDownRight className="absolute -right-4 top-0 w-8 h-8 md:w-12 md:h-12 text-white/10 hidden md:block" />
                         </span>
                     </h1>
 
-                    <div className="text-2xl md:text-3xl font-mono text-white/30 mb-12 flex items-center gap-4">
-                        <span className="w-12 h-px bg-white/10" />
+                    <div className="text-xl md:text-3xl font-mono text-white/30 mb-8 md:mb-12 flex items-center gap-4">
+                        <span className="w-8 md:w-12 h-px bg-white/10" />
                         <Typewriter
                             options={{
                                 strings: [

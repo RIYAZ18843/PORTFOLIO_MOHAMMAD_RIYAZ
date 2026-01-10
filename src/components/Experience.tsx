@@ -67,23 +67,29 @@ const Experience = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-glass p-8 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-all"
                         >
-                            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                                <Briefcase className="w-16 h-16" />
-                            </div>
-                            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-                                <div>
-                                    <h3 className="text-xl font-bold font-orbitron text-primary">{exp.role}</h3>
-                                    <p className="text-foreground/80 font-medium">{exp.company}</p>
+                            <div className="animate-float" style={{ animationDelay: `${index * 1.2}s` }}>
+                                <div className="bg-glass p-8 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-all">
+                                    {/* Glowing Aura */}
+                                    <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500" />
+
+                                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                        <Briefcase className="w-16 h-16" />
+                                    </div>
+                                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 relative z-10">
+                                        <div>
+                                            <h3 className="text-xl font-bold font-orbitron text-primary">{exp.role}</h3>
+                                            <p className="text-foreground/80 font-medium">{exp.company}</p>
+                                        </div>
+                                        <span className="text-xs font-orbitron px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary self-start">
+                                            {exp.period}
+                                        </span>
+                                    </div>
+                                    <p className="text-foreground/60 leading-relaxed max-w-2xl text-sm relative z-10">
+                                        {exp.desc}
+                                    </p>
                                 </div>
-                                <span className="text-xs font-orbitron px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary self-start">
-                                    {exp.period}
-                                </span>
                             </div>
-                            <p className="text-foreground/60 leading-relaxed max-w-2xl text-sm">
-                                {exp.desc}
-                            </p>
                         </motion.div>
                     ))}
 
@@ -96,13 +102,19 @@ const Experience = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    className="bg-glass p-6 rounded-2xl border border-white/10 hover:border-secondary/50 transition-all"
                                 >
-                                    <GraduationCap className="text-secondary w-8 h-8 mb-4" />
-                                    <h3 className="text-lg font-bold font-orbitron text-secondary">{edu.degree}</h3>
-                                    <p className="text-foreground/80 text-sm mb-1">{edu.school}</p>
-                                    <p className="text-foreground/50 text-xs mb-3">{edu.period}</p>
-                                    <p className="text-foreground/60 text-sm">{edu.desc}</p>
+                                    <div className="animate-float" style={{ animationDelay: `${index * 1.5}s` }}>
+                                        <div className="bg-glass p-6 rounded-2xl border border-white/10 hover:border-secondary/50 transition-all relative group">
+                                            {/* Glowing Aura */}
+                                            <div className="absolute -inset-2 bg-gradient-to-r from-secondary/20 via-primary/20 to-secondary/20 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500" />
+
+                                            <GraduationCap className="text-secondary w-8 h-8 mb-4 relative z-10" />
+                                            <h3 className="text-lg font-bold font-orbitron text-secondary relative z-10">{edu.degree}</h3>
+                                            <p className="text-foreground/80 text-sm mb-1 relative z-10">{edu.school}</p>
+                                            <p className="text-foreground/50 text-xs mb-3 relative z-10">{edu.period}</p>
+                                            <p className="text-foreground/60 text-sm relative z-10">{edu.desc}</p>
+                                        </div>
+                                    </div>
                                 </motion.div>
                             ))}
                         </div>

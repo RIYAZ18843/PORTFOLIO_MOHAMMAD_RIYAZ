@@ -42,19 +42,25 @@ const Skills = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            className="glass-panel p-10 rounded-[3rem] group hover:border-primary/50 transition-all duration-500"
                         >
-                            <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-10 group-hover:scale-110 transition-transform">
-                                <div className="text-primary">{cat.icon}</div>
-                            </div>
-                            <h3 className="text-2xl font-black font-orbitron mb-4">{cat.title}</h3>
-                            <p className="text-white/40 text-sm mb-8 leading-relaxed font-medium">{cat.desc}</p>
-                            <div className="flex flex-wrap gap-2">
-                                {cat.skills.map((s, idx) => (
-                                    <span key={idx} className="text-[10px] font-black uppercase tracking-widest text-primary/70 bg-primary/5 px-3 py-1 rounded-full border border-primary/10">
-                                        {s}
-                                    </span>
-                                ))}
+                            <div className="animate-float" style={{ animationDelay: `${i * 1.5}s` }}>
+                                <div className="glass-panel p-10 rounded-[3rem] group hover:border-primary/50 transition-all duration-500 relative overflow-hidden">
+                                    {/* Glowing Aura */}
+                                    <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 rounded-[3rem] opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
+
+                                    <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-10 group-hover:scale-110 transition-transform relative z-10">
+                                        <div className="text-primary">{cat.icon}</div>
+                                    </div>
+                                    <h3 className="text-2xl font-black font-orbitron mb-4 relative z-10">{cat.title}</h3>
+                                    <p className="text-white/40 text-sm mb-8 leading-relaxed font-medium relative z-10">{cat.desc}</p>
+                                    <div className="flex flex-wrap gap-2 relative z-10">
+                                        {cat.skills.map((s, idx) => (
+                                            <span key={idx} className="text-[10px] font-black uppercase tracking-widest text-primary/70 bg-primary/5 px-3 py-1 rounded-full border border-primary/10">
+                                                {s}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         </motion.div>
                     ))}

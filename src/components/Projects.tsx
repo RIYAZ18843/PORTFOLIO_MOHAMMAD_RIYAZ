@@ -16,7 +16,7 @@ const projects = [
     {
         title: "E-commerce Website",
         description: "Full-stack luxury e-commerce platform with dynamic product grids, glassmorphic checkout, and multi-category navigation.",
-        tech: ["React.js", "Context API", "React Router", "Tailwind CSS", "Framer Motion"],
+        tech: ["React.js", "Context API", "React Router", "Tailwind CSS"],
         image: "/ecommerce-mockup.png",
         link: "https://e-commerce-nine-kohl-68.vercel.app/",
         github: "https://github.com/RIYAZ18843"
@@ -24,7 +24,7 @@ const projects = [
     {
         title: "Professional Portfolio",
         description: "Custom WordPress portfolio featuring a luxurious design, Elementor Pro layouts, and WooCommerce integration for e-commerce functionality.",
-        tech: ["WordPress", "Elementor Pro", "WooCommerce", "SEO"],
+        tech: ["WordPress", "Elementor Pro", "WooCommerce", "SEO", "Framer Motion"],
         image: "/wordpress-portfolio.png",
         link: "https://riyaz.expiryhedge.com/",
         github: "https://github.com/RIYAZ18843"

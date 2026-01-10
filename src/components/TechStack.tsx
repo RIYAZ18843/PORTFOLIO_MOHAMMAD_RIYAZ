@@ -14,7 +14,9 @@ import {
     SiMysql,
     SiGit,
     SiJavascript,
-    SiHtml5
+    SiJavascript,
+    SiHtml5,
+    SiFramer
 } from "react-icons/si";
 
 const techStack = [
@@ -30,6 +32,7 @@ const techStack = [
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
     { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
     { name: "Git", icon: SiGit, color: "#F05032" },
+    { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },
 ];
 
 const TechStack = () => {

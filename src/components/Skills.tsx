@@ -8,7 +8,7 @@ const skillCategories = [
     {
         title: "Full Stack (MERN)",
         icon: <Layout className="w-8 h-8" />,
-        skills: ["React.js / Next.js", "Node.js / Express", "MongoDB / SQL", "RESTful APIs"],
+        skills: ["React.js / Next.js", "Node.js / Express", "MongoDB / SQL", "RESTful APIs", "Framer Motion"],
         desc: "Building scalable and robust web systems from scratch."
     },
     {

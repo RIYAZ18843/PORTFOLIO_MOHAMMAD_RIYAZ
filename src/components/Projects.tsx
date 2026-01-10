@@ -63,6 +63,9 @@ const Projects = () => {
                         >
                             {/* Inner Floating Wrapper to avoid conflict with hover scale */}
                             <div className="animate-float" style={{ animationDelay: `${index * 1.5}s` }}>
+                                {/* Glowing Aura Effect - Matching Hero Section */}
+                                <div className="absolute -inset-3 bg-gradient-to-r from-primary via-secondary to-primary rounded-2xl opacity-20 blur-lg animate-pulse-glow -z-10" />
+
                                 {/* Rotating border effect */}
                                 <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity">
                                     <div className="absolute inset-[-2px] bg-gradient-to-r from-primary via-secondary to-primary rounded-2xl animate-rotate-border blur-sm -z-10" />

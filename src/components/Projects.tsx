@@ -23,10 +23,10 @@ const projects = [
     },
     {
         title: "Professional Portfolio",
-        description: "Custom WordPress portfolio featuring a luxurious design, Elementor Pro layouts, and WooCommerce integration for e-commerce functionality.",
-        tech: ["WordPress", "Elementor Pro", "WooCommerce", "SEO", "Framer Motion"],
+        description: "Premium personal portfolio featuring advanced Framer Motion animations, glassmorphism UI, and fluid responsiveness using Next.js.",
+        tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "TypeScript"],
         image: "/wordpress-portfolio.png",
-        link: "https://riyaz.expiryhedge.com/",
+        link: "https://portfolio-mohammad-riyaz.vercel.app/",
         github: "https://github.com/RIYAZ18843"
     }
 ];

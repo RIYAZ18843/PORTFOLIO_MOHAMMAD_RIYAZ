@@ -115,9 +115,12 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.9, x: 50 }}
                     animate={{ opacity: 1, scale: 1, x: 0 }}
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative block mt-16 lg:mt-0"
+                    className="relative block mt-16 lg:mt-0 animate-float"
                 >
-                    <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-[3rem] md:rounded-[5rem] overflow-hidden glass-panel group shadow-2xl">
+                    {/* Glowing Ring Effect */}
+                    <div className="absolute -inset-4 bg-gradient-to-r from-primary via-secondary to-primary rounded-[3.5rem] md:rounded-[5.5rem] opacity-20 blur-xl animate-pulse-glow" />
+
+                    <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-[3rem] md:rounded-[5rem] overflow-hidden glass-panel group shadow-2xl animate-cyber-glitch">
                         {/* Real Profile Image Integration */}
                         <div className="absolute inset-0 w-full h-full scale-110 group-hover:scale-100 transition-transform duration-[2s]">
                             <Image

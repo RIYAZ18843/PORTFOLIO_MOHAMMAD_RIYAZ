@@ -216,3 +216,56 @@
   background-size: 1000px 100%;
   animation: shimmer 3s infinite;
 }
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes cyber-glitch {
+  0% {
+    clip-path: inset(50% 50% 50% 50%);
+    transform: skew(0deg);
+  }
+
+  5% {
+    clip-path: inset(10% 0 80% 0);
+    transform: skew(10deg);
+  }
+
+  10% {
+    clip-path: inset(80% 0 10% 0);
+    transform: skew(-10deg);
+  }
+
+  15% {
+    clip-path: inset(0 0 0 0);
+    transform: skew(0deg);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: skew(0deg);
+  }
+}
+
+.animate-blob {
+  animation: blob-bounce 7s infinite;
+}
+
+.animate-cyber-glitch {
+  animation: cyber-glitch 0.5s ease-out forwards;
+}

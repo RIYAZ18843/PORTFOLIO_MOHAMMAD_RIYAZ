@@ -99,7 +99,7 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <form onSubmit={handleSubmit} className="glass-panel p-10 rounded-[3rem] space-y-6">
+                        <form onSubmit={handleSubmit} className="glass-panel p-6 md:p-10 rounded-3xl md:rounded-[3rem] space-y-6">
                             {formState === "success" ? (
                                 <div className="flex flex-col items-center justify-center py-20 text-center">
                                     <CheckCircle className="w-16 h-16 text-primary mb-4" />
@@ -109,19 +109,19 @@ const Contact = () => {
                                 </div>
                             ) : (
                                 <>
-                                    <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div className="space-y-2">
                                             <label className="text-[10px] uppercase font-black text-white/40 tracking-widest">Full Name</label>
-                                            <input required name="name" type="text" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-primary/50 transition-all" />
+                                            <input required name="name" type="text" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-primary/50 transition-all font-sans" />
                                         </div>
                                         <div className="space-y-2">
                                             <label className="text-[10px] uppercase font-black text-white/40 tracking-widest">Email Address</label>
-                                            <input required name="email" type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-primary/50 transition-all" />
+                                            <input required name="email" type="email" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-primary/50 transition-all font-sans" />
                                         </div>
                                     </div>
                                     <div className="space-y-2">
                                         <label className="text-[10px] uppercase font-black text-white/40 tracking-widest">Message</label>
-                                        <textarea required name="message" rows={5} className="w-full bg-white/5 border border-white/10 rounded-3xl px-6 py-4 focus:outline-none focus:border-primary/50 transition-all resize-none" />
+                                        <textarea required name="message" rows={5} className="w-full bg-white/5 border border-white/10 rounded-3xl px-6 py-4 focus:outline-none focus:border-primary/50 transition-all resize-none font-sans" />
                                     </div>
                                     <button
                                         disabled={formState === "submitting"}
